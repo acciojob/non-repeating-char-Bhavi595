@@ -1,12 +1,25 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	if(str.match(/\d.\d/)){
-		let value = match(/\d.\d/);
-		return value;
-	}
-	else{
-		return 'null';
-	}
+	 let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (obj[str[i]] !== undefined) {
+        
+        obj[str[i]] =  obj[str(i)]+1;
+    }
+     else {
+     
+        obj[str[i]] = 1;    
+    }
+    
+  }
+  for (let i = 0; i < str.length; i++){
+    if( obj[str[i]] ==  1){
+        return str[i];
+    }
+    
+  }
+  return null;
+
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
