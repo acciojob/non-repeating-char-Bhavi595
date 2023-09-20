@@ -4,7 +4,7 @@ function firstNonRepeatedChar(str) {
   for (let i = 0; i < str.length; i++) {
     if (obj[str[i]] !== undefined) {
         
-        obj[str[i]] =  obj[str(i)]+1;
+        obj[str[i]]  += 1;
     }
      else {
      
@@ -23,6 +23,8 @@ function firstNonRepeatedChar(str) {
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
+
+
 
 
 
