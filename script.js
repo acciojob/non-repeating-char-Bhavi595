@@ -1,17 +1,15 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	let answer ='null'
-       for(let i =0; i<str.length; i++){
-           
-           if(str.charAt(i)==str.charAt(i+1)){
-                answer = str.charAt(i);
-                return answer;
-           }
-
-       }
-
-       return answer;
-	
+	if(str.match(/\d.\d/)){
+		let value = match(/\d.\d/);
+		return value;
+	}
+	else{
+		return 'null';
+	}
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
+
+
+
